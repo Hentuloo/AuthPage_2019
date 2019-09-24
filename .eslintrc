@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "localStorage": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "react/state-in-constructor": [1, "never"],
+    "react/jsx-props-no-spreading": 1,
+    "import/no-extraneous-dependencies": 1,
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  }
+}
